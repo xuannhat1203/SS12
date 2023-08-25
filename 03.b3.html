@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=+prompt("nhap 1 so tuy y");
+        for (i=0;i<=a;i++){
+            if (a>0) {
+                console.log(i)
+                alert("Nguoi dung tiep tuc nhap");
+            }
+            if (a<0) {
+                alert("Dung nhap");}
+            let b = true;
+            for (i = 2; i <= a - 1; i++) {
+                if (a % i == 0) {
+                    console.log("day khong phai la so nguyen to");
+                    b = false;
+                    break;
+                }
+            }
+            if (b) {
+                console.log("Day la so nguyen to")
+            }   
+            let tatle = 0;
+            for (i = 1; i < numBer; i++) {
+                if (numBer % i == 0) {
+                    tatle += numBer;
+                }
+            }
+            if (numBer == tatle) {
+                console.log("Day la so nguyen to");
+            } else {
+                console.log("day khong phai la so nguyen to");
+            }
+        }
+    </script>
+</body>
+</html>
